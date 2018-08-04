@@ -32,13 +32,23 @@ class ParSort {
                                 result[k] = xs2[j++];
                             }
                         }
+		                for (int k = 0; k < array.length; k++) {
+		                    array[k] = result[k];
+		                }
                         return result;
                     });
 
             parsort.whenComplete((result, throwable) -> {
 
-                for (int k = 0; k < array.length; k++) {
-                    array[k] = result[k];
+                // for (int k = 0; k < array.length; k++) {
+//                     array[k] = result[k];
+//                 }
+				if (throwable == null) 
+				{
+                    parsort.complete(array);
+                } else 
+				{
+                    parsort.completeExceptionally(throwable);
                 }
             }); // TODO implement me
             parsort.join();
