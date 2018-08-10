@@ -19,7 +19,7 @@ The weight increases or decreases the strength of the signal at a connection. Di
 different kinds of transformations on their inputs. Signals travel from the first layer (the input layer), to the last
 layer (the output layer), possibly after traversing the layers multiple times.
 
-![alt text](https://github.com/Ajay-Goel/INFO_6205_Program_Structures_-_Algorithm/blob/Project/Face_Digit_Recognition_NeuralNetwork/Media/BPNeuralNetwork.jpg)
+![alt text](https://github.com/Ajay-Goel/INFO_6205_Program_Structures_-_Algorithm/blob/FinalProject/Face_Digit_Recognition_Project/Media/BPNeuralNetwork.jpg)
 
 ## Problem Statement
 The neural network in our application is used to solve two major problems:
